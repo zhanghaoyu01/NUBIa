@@ -1,0 +1,713 @@
+a {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0 none;
+}
+// main top description css start
+#phone{
+    background-color:white;
+}
+#imgSrc {
+    margin-top: 1px;
+    min-width: 360px;
+}
+.main_content {
+    margin: 0 auto;
+    width: 1170px;
+    .nav {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        a {
+            color: #999;
+        }
+    }
+    .main_left {
+        position: relative;
+        float: left;
+        width: 50%;
+        /* height: 730px; */
+        text-align: center;
+        right: 110px;
+    }
+}
+
+// descption css start
+.main_right {
+    float: right;
+    margin-bottom: 20px;
+    width: 50%;
+    .sellPoint {
+        color: #e8380d;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .productActivity {
+        background: rgb(248,248,248);
+        display: inline-block;
+        width: 100%;
+        padding: 30px 20px 20px 20px;
+    }
+    .price {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0px;
+        
+        .PriceContent {
+            width: 85%;
+            display: inline-block;
+            .member_price_name {
+                background: #FF8D00;
+                padding: 3px 4px;
+                border-radius: 3px;
+                color: #fff;
+                font-size: 12px;
+            }
+        }
+    }
+    .promo-sell {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1rem 0px;
+        .rightLabel {
+            width: 15%;
+            color: rgb(100,100,100);
+            font-size: 14px;
+            letter-spacing: 7px;
+            line-height: 20px;
+        }
+        .promo-info {
+            width: 85%;
+            display: inline-block;
+            p {
+                width: 100%;
+                margin-bottom: 7px;
+                color: rgb(53,53,53);
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                span {
+                    display: inline-block;
+                    width: 75%;
+                    font-size: 14px;
+                    color: rgb(30,30,30);
+                }
+            }
+        }
+    }
+    .addressMain {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px 20px;
+        border-bottom: 1px solid rgb(224,224,224);
+    }
+    .productOptions {
+        width: 100%;
+        padding: 20px 20px 20px 20px;
+        border-bottom: 1px solid rgb(224,224,224);
+        
+        .phone_net {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .clearfix_jj {
+                width: 85%;
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                align-items: center;
+                .cur {
+                    border: 1px rgb(255,94,94) solid;
+                    color: rgb(255,94,94);
+                }
+                li {
+                    box-sizing: border-box;
+                    margin-top: 2px;
+                    padding: 8px 0px;
+                    width: 31%;
+                    margin-right: 10px;
+                    border: 1px solid rgb(224,224,224);
+                    color: rgb(100,100,100);
+                    text-align: center;
+                    font-size: 14px;
+                    cursor: pointer;
+                    margin-bottom: 10px;
+                    border-radius: 7px;
+                    &:not(.cur){
+                        &:hover{
+                            border-color:#666;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .phone_net_zj {
+            width: 100%;
+            margin-top: 5px;
+            float: left;
+        }
+        .count {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+        }
+        
+    }
+    .pjtc {
+        float: left;
+        margin-bottom: 10px;
+        width: 83%;
+        border: 1px rgb(224,224,224) solid;
+        margin-left: 15%;
+        border-radius: 7px;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .address_module {
+        position: fixed;
+        width: 700px;
+        height: 400px;
+        top: 100px;
+        left: 50%;
+        margin-left: -350px;
+        z-index: 10009;
+        color: #000;
+        background: #fff;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    .user_address_modle {
+        background: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+    }
+}
+.btnGroup {
+    margin-top: 40px;
+    width: 100%;
+}
+.buy-btn-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+        color: #fff;
+        font-size: 15px;
+    }
+}
+.buy-btn-main>* {
+    display: inline-block;
+    height: 50px;
+    width: 48.5%;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.addShopCar {
+    background: rgb(255,148,79);
+}
+.buy-now {
+    background: rgb(255,94,94);
+}
+.rightLabel2 {
+    width: 15%;
+    font-size: 0.9rem;
+    color: rgb(100,100,100);
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.hb {
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.hbfree {
+    box-sizing: border-box;
+    height: 70px;
+    width: 31%;
+    margin-top: 2px;
+    margin-right: 10px;
+    padding: 0px 5px;
+    border: 1px solid rgb(224,224,224);
+    color: rgb(100,100,100);
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-size: 13px;
+    }
+}
+#huabei{
+    display: flex;
+}
+#selectPackage {
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.main_right .cur {
+    border: 1px rgb(255,94,94) solid;
+    color: rgb(255,94,94);
+}
+.num {
+    width: 35%;
+    height: 50px;
+    border: 1px solid rgb(230,230,230);
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+        width: 33.33%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(30,30,30);
+        font-size: 16px;
+        cursor: pointer;
+        img {
+            width: 30%;
+        }
+    }
+}
+.selectPackage li {
+    box-sizing: border-box;
+    height: 70px;
+    width: 31%;
+    margin-top: 2px;
+    margin-right: 10px;
+    border: 1px solid rgb(224,224,224);
+    color: rgb(100,100,100);
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-size: 11px;
+        color: rgb(102,102,102)!important;
+    }
+}
+#selectBao .net li {
+    width: 47.7%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+}
+.wrap-txt {
+    margin-right: 0.85rem;
+    color: rgb(255,94,94);
+    padding: 0rem 1rem;
+    border: 1px solid rgb(255,94,94);
+    background: white;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.rightLabel {
+    width: 15%;
+    color: rgb(100,100,100);
+    font-size: 14px;
+    letter-spacing: 7px;
+    line-height: 20px;
+}
+.address {
+    width: 80%;
+    padding-left: 30px;
+    margin-top: 0;
+    color: #000;
+    position: relative;
+    &> p {
+        line-height: 18px;
+        font-size: 12px;
+        cursor: pointer;
+        &>img {
+            position: absolute;
+            width: 14px;
+            left: 10px;
+            top: 2px;
+        }
+        &>span {
+            display: inline-block;
+            font-size: 14px;
+            position: relative;
+            top: 1px;
+        }
+    }
+
+}
+.expressprefix {
+    color: #FF4D4D;
+}
+.change {
+    width: 6%;
+    color: #e8380d;
+    cursor: pointer;
+    font-size: 13px;
+    margin-right: 8px;
+}
+.rightLabel2 {
+    width: 15%;
+    font-size: 0.9rem;
+    color: rgb(100,100,100);
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+#cartbox {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    display: none;
+}
+
+
+// scale masgister css start
+.wrap {
+    // width: 400px;
+    // height: 576px;
+    margin-top: 30px;
+    margin-left: 50px;
+    position: relative;
+}
+
+#spic {
+    // width: 400px;
+    height: 576px;
+    border: 1px solid #000;
+    /* float: left; */
+    position: relative;
+}
+
+#spic img {
+    width: 100%;
+    height: 576px;
+}
+
+#sf {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
+    cursor: move;
+}
+
+#bf {
+    width: 576px;
+    height: 576px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    float: right;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 596px;
+    visibility: hidden;
+    z-index: 100000;
+}
+
+#bf img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width:576*2px;
+    height:576*2px;
+}
+
+#ulist {
+    position: absolute;
+    left: 0px;
+    margin-top: 30px;
+    width: 100%;
+    height: 86px;
+    overflow: hidden;
+}
+
+#ulist a {
+    display: inline-block;
+    z-index: 1000;
+    width: 36px;
+    height: 86px;
+    box-sizing: border-box;
+    position: absolute;
+    padding: 1px 0;
+    margin: 0;
+    border: 1px solid rgb(136, 135, 135);
+    text-decoration: none;
+    font-size: 38px;
+    color: #666;
+    line-height: 80px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#list {
+    float: left;
+    margin-left: 46px;
+    height: 86px;
+    position: relative;
+    width: 440px;
+    overflow: hidden;
+}
+
+.magnify ul {
+    list-style: none;
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    width:auto !important;
+}
+
+.magnify ul li {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 20px;
+    width: 86px;
+    height: 86px;
+    float: left;
+}
+
+.magnify ul li img:hover {
+    border: 1px solid red;
+}
+
+.magnify ul li img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(136, 135, 135);
+    padding: 2px;
+}
+
+#right {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: #333;
+}
+
+.magnify #left {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
+}
+
+.control:hover {
+    /* border-color: red !important;
+    color: red !important; */
+}
+
+.box {
+    position: absolute;
+    background: red;
+    height: 10px;
+}
+/* 左右按键hover 背景 */
+
+.control[data-flag='true']:hover {
+    color: red !important;
+    border-color: red !important;
+}
+
+
+
+// detail images css start
+.details-img {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+    display: inline-block;
+}
+.detail-tab {
+    border-top: 1px solid #e5e5e5;
+    margin-top: 40px;
+    height: 60px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.detailtab li.active {
+    color: #e33b1f;
+}
+.detailtab li:last-child {
+    border-left: 1px solid rgb(208,208,208)!important;
+}
+.detailtab li {
+    color: #000;
+    padding: 0 20px;
+    font-size: 14px;
+    float: left;
+    margin: 22px 0;
+    cursor: pointer;
+    line-height: 15px;
+}
+
+// eSIM开卡开卡流程
+.esim {
+    width: 280px;
+    text-align: center;
+    position: absolute;
+    left: 27%;
+    bottom: 14%;
+    height: 10px;
+}
+a.esim_a {
+    color: #fff;
+    width: 250px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 40px;
+    font-size: 14px;
+    background: #f00;
+}
+.esim_content {
+    position: fixed;
+    width: 94%;
+    left: 3%;
+    height: 90%;
+    top: 200%;
+    overflow-y: auto;
+    transition: all 0.5s ease;
+}
+
+// 商品详情  规格参数 tabs and fixed
+.fixed-btn {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: none;
+    width: 100%;
+    height: 75px;
+    border-bottom: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 1);
+    text-align: right;
+    line-height: 40px;
+}
+.fixed-btn-div {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+}
+.fixedLeft {
+    width: 15%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .fixedLeft span.fixedCur {
+        color: rgb(255,94,94)!important;
+    }
+    .fixedLeft span:first-child {
+        border-right: 1px solid rgb(208,208,208);
+    }
+    span {
+        width: 50%;
+        display: inline-block;
+        font-size: 14px;
+        color: rgb(60,60,60);
+        text-align: center;
+        line-height: 15px;
+        cursor: pointer;
+    }
+    
+    
+}
+.fixedRight {
+    float: right;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        width: 17.5%;
+    }
+    .fixedInfo {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        .fixedInfoName {
+            color: rgb(60,60,60);
+            font-size: 15px;
+        }
+        .fixedInfoIntro {
+            font-size: 12px;
+            color: rgb(150,150,150);
+            text-align: left;
+        }
+    }
+    .buy-now-fixed {
+        width: 40%;
+        height: 47px;
+        background: rgb(255,94,94);
+        color: #fff;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 47px;
+        font-size: 15px;
+        margin-left: 20px;
+        a {
+            font-size: 15px;
+            color: #fff;
+        }
+    }
+}
+.details-img img {
+    max-width: 100%;
+    vertical-align: middle;
+}

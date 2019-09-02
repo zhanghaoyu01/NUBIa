@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--解决ie9以下浏览器对html5新增标签的不识别，并导致CSS不起作用的问题-->
+    <!--解决ie9以下浏览器对 css3 Media Query 的不识别 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+    <link rel="bookmark" href="../image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/login-register.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>用户注册——努比亚官方网站</title>
+    
+</head>
+<body>
+    <section class="register" style="display:none;">
+        <div class="container">
+            <div class="logo"></div>
+            <form action="" method="post" id="registerform">
+                <input type="hidden" name="form_tag" id="form_tag" value="84c7320d514eba0c3329962797a0d5d2">
+                <input type="hidden" name="session_tag" id="session_tag" value="register_tag">
+                <div class="navTab" id="tab_nav">
+                    <label for="tab-mobile" class="tab-btn cur" style="margin-right:8px"><input type="radio" name="myradio" id="tab-mobile" value="mobile" checked="checked"></label>
+                </div>
+        
+                <div class="navCon" id="tab_con">
+                    <div class="reg-phone">
+                        <dl>
+                            <dd>
+                                <div class="input-con"><input type="text" id="mobile" name="mobile" placeholder="请输入手机号码" datatype="m" errormsg="手机号码格式错误" readonly="" onmousedown="this.removeAttribute('readonly');" onfocus="this.removeAttribute('readonly');" ajaxurl="/register/ajaxcheckmobile2.action"></div>
+                                <div class="checktip">
+                                    <spn class="Validform_checktip Validform_right" id="phone_error"></spn>
+                                    
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dd>
+                                <div class="input-con">
+                                    <input type="password" id="passwordMobile" readonly="" onmousedown="this.removeAttribute('readonly');" onfocus="this.removeAttribute('readonly');" placeholder="密码为6-16个字符（数字、字母、符号至少包含两种）" datatype="s6-16" errormsg="密码为6-16个（数字、字母、符号至少包含</br>两种）">
+                                    <input type="hidden" id="passwordMobile_md5" name="passwordMobile">
+                                </div>
+                                <div class="checktip">
+                                    <spn class="Validform_checktip Validform_right" id="password_error"></spn>
+                                </div>
+                            </dd>
+                        </dl>
+                        
+                        <dl>
+                            <dd>
+                                <div class="input-con">
+                                    <input type="text" id="mobileValidateCode" name="mobileValidateCode" readonly="" onmousedown="this.removeAttribute('readonly');" onfocus="this.removeAttribute('readonly');" placeholder="请输入手机收到的验证码">
+                                    <input type="button" value="获取验证码" class="btn-code" id="btn-code-mobile">
+                                    <input type="hidden" id="verifySessionId" value="">
+                                </div>
+                                <div class="checktip"><span class="Validform_checktip Validform_wrong"></span></div>
+                            </dd>
+                        </dl>
+                    </div>
+        
+                </div>
+                <div class="regfooterbar" style="width:360px;margin-left:8px;">
+                    <div class="safe">
+                        <div id="theAgreement" style="text-align:left;margin-bottom:10px">
+                            <input type="checkbox" checked="checked" value="1" title="需要同意《用户服务协议》" name="agreement" id="agreement">我已阅读并接受
+                            <a href="/res/html/agreement.html" title="用户协议" target="_blank">用户协议</a>和
+                            <a href="/res/html/privacy.html" title="隐私政策" target="_blank">隐私政策</a>
+                        </div>
+                        <div id="theAgreementAdvice" class="hint clear"></div>
+                    </div>
+                    <div class="buttons">
+                        <input type="hidden" name="back_url" value="https://shop.nubia.com/">
+                        <input type="button" class="btn" value="提&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交" name="regButton" id="regButton">
+                    </div>
+                    <p style="text-align:right;">已有账号，<a href="/login/gologin.action?back_url=https%3A%2F%2Faccount.nubia.com%2Flogin%2Findex.action" style="color:#e8380d;">直接登录</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="login">
+        <div class="container">
+            <div class="logo"></div>
+            <form id="loginForm">
+                <input type="hidden" name="form_tag" id="form_tag" value="792504a754b3bf9c8cd41ec002f84861">
+                <input type="hidden" name="session_tag" id="session_tag" value="login_tag">
+                <div class="navTab" id="tab_nav">
+                    <label for="tab-mobile" class="tab-btn cur" style="margin-right:8px"><input type="radio" name="myradio" id="tab-mobile" value="mobile" checked="checked">努比亚账号登录</label>|
+                    <label for="tab-email" class="tab-btn" style="margin-left:8px"><input type="radio" name="myradio" id="tab-email" value="email">手机验证码登录</label>
+                </div>
+
+                <div class="navCon" id="tab_con">
+                    <div class="reg-id">
+                        <dl>
+                            <dd>
+                                <div class="input-con">
+                                    <input type="text" id="username" name="username" placeholder="邮箱/手机号码/用户名" datatype="*" errormsg="手机号码格式错误"> 
+                                    <span class="icon-id"></span>
+                                </div>
+                                <div class="checktip" id="user_name_tag">
+                                    <span id="username_error" class="Validform_checktip Validform_right"></span>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dd>
+                                <div class="input-con">
+                                    
+                                            
+                                    <input type="password" id="password" name="password" placeholder="密码为6-16个字符（数字、字母、符号至少包含两种）" datatype="s6-16" errormsg="密码为6-16个（数字、字母、符号至少包含两种）">
+                                </div>
+                                <div class="checktip" id="password_tag">
+                                    <span id="password_error" class="Validform_checktip Validform_right"></span>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="reg-phone" style="display: none;">
+                        <dl>
+                            <dd>
+                                <div class="input-con">
+                                    <input type="text" id="mobile" name="mobile" placeholder="手机号码" datatype="m" errormsg="手机号码格式错误" ajaxurl="/login/checkmobile.action">
+                                    <span class="icon-id"></span>
+                                </div>
+                                <div class="checktip" id="mobile-tag">
+                                    <span id="phone_error" class="Validform_checktip Validform_right"></span>
+                                </div>
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <dd>
+                                <div class="input-con">
+                                    <input type="text" id="mobileValidateCode" name="mobileValidateCode" placeholder="请输入手机验证码" datatype="*">
+                                    <input type="button" value="获取验证码" class="btn-code" id="btn-code-mobile">
+                                    <input type="hidden" id="verifySessionId" value="">
+                                </div>
+                                <div class="checktip"><span class="Validform_checktip Validform_right" id="code_error"></span></div>
+                            </dd>
+                        </dl>
+                        <div id="mobile-tips" style="color:red"></div>
+                    </div>
+                </div>
+                <div id="tips"></div>
+                <input type="hidden" name="back_url" value="https://account.nubia.com/login/index.action">
+                <input type="button" style="margin-top:10px" id="login_btn_id" value="立即登录" class="btn-login">
+                <div class="register-now">
+                    <a href="/login/registerVerify.action?back_url=https%3A%2F%2Faccount.nubia.com%2Flogin%2Findex.action" style="color:#e8380d">注册新账号</a>
+                    <span style="font-size: 18px;padding: 0 7px;color: #d5d5d5;">|</span>
+                    <a style="color:#34383d" href="/login/fetchpasswordVerify.action?back_url=https%3A%2F%2Faccount.nubia.com%2Flogin%2Findex.action">忘记密码?</a>
+                </div>
+                <div class="third-login">
+                    <span style="float:left;line-height:30px;">其他方式登录：</span>
+                    <label class="login-rem" style="float:left"><!--input type="checkbox" name="remember" id="remember" value="1" -->
+                    <a href="/login/qqshow.action?back_url=https%3A%2F%2Faccount.nubia.com%2Flogin%2Findex.action" class="qq"></a>
+                    <a href="/login/sinashow.action?back_url=https%3A%2F%2Faccount.nubia.com%2Flogin%2Findex.action" class="weibo"></a>
+                    <a href="/login/zfbshow.action?back_url=https%3A%2F%2Faccount.nubia.com%2Flogin%2Findex.action" class="alipay"></a>
+                    <a href="/login/wxshow.action?back_url=https%3A%2F%2Faccount.nubia.com%2Flogin%2Findex.action" class="wx"></a>
+                    <!--两周内自动登录--></label>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div id="nb-footer">
+        <div class="nubia-copyright">
+            <p class="nb-footer-info"> 2012-2019 努比亚 版权所有 <a href="http://beian.miit.gov.cn">粤ICP备10006213号-2</a> ICP经营许可证编号：粤B2-20120688<a href="http://szcert.ebs.org.cn/D52B1891-CB9A-4FD0-8BC6-1D5650B567CE" target="_blank" style="margin-right: 5px;margin-left: 3px;"><img src="https://account.nubia.com/res1/images/govIcon.png" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示" border="0" style="border-width:0px;border:hidden; border:none;vertical-align: middle;height: 18px;"></a> 努比亚技术有限公司</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

@@ -8,11 +8,12 @@
     <!-- 强制IE使用Chrome Frame 渲染 -->
     <meta name="keywords" content="nubia,努比亚,努比亚手机,努比亚官网,努比亚红魔,红魔手机,红魔,红魔Mars,努比亚X,努比亚Z18,努比亚Z18mini,努比亚Z17S,努比亚Z17,努比亚V18">
     <meta name="description" content="努比亚,新锐高端智能手机品牌,以专业摄影,极致游戏体验,无边框等为特色,代表产品有红魔电竞游戏手机,努比亚X,努比亚阿尔法等.">
-    <link rel="shortcut icon" href="../imges/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon" />
     <!--IE 地址栏前的图标-->
-    <link rel="Bookmark" href="../imges/favicon.ico" type="image/x-icon">
+    <link rel="Bookmark" href="../image/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/nubia-index.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../../font_ufs83m5no89/iconfont.css">
     <!--收藏夹的图标-->
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -25,46 +26,183 @@
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
     <title>努比亚手机-官方网站</title>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
+
+
+
+
+    <!-- header html article start -->
     <header id="header" class="indexheader">
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-fixed-top navbar-default">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                     <a class="navbar-brand" href="#">
-                        <img alt="Nubia" height="50px" src="../imges/nubia-logo-inverse-x2-cn.png" style="margin-top: 6px;">
+                        <img alt="Nubia" height="50px" src="../image/nubia-logo-inverse-x2-cn.png" style="margin-top: 6px;">
                     </a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">Link</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
+                        <li><a href="//shop.nubia.com/">商城</a></li>
+                        <li id="product" class="product"><a href="javascript:void(0)">手机</a>
+                            <div class="list" style="display:none; height: 0;">
+                                <div class="container"><a href="#" class="page-arrow arrow-left hidden-xs"><i class="iconfont icon-arrow-left"></i></a>
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.nubia.com/Z20"><img src="https://oss.static.nubia.cn/blockimage/156525288896.png" data-x2="//oss.static.nubia.cn/blockimage/156525288886.png" alt="Z20"> <span>Z20</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.nubia.com/redmagicthree"><img src="https://oss.static.nubia.cn/blockimage/156516875510.png" data-x2="//oss.static.nubia.cn/blockimage/156516875535.png" alt="红魔3"> <span>红魔3</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.nubia.com/a/black1gb8gb"><img src="https://oss.static.nubia.cn/blockimage/156516876792.png" data-x2="//oss.static.nubia.cn/blockimage/156516876767.png" alt="努比亚阿尔法"> <span>努比亚阿尔法</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.nubia.com/redmagicmars/black8gb128gb"><img src="https://oss.static.nubia.cn/blockimage/155470065110.png" data-x2="//oss.static.nubia.cn/blockimage/155470065125.png" alt="红魔Mars"> <span>红魔Mars</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.nubia.com/nubiaX"><img src="https://oss.static.nubia.cn/blockimage/155470065110.png" data-x2="//oss.static.nubia.cn/blockimage/154745220559.png" alt="X"> <span>X</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.nubia.com/nubiaz18"><img src="https://oss.static.nubia.cn/blockimage/154745219020.png" data-x2="//oss.static.nubia.cn/blockimage/154745218913.png" alt="Z18"> <span>Z18</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.nubia.com/nubiaZ18mini"><img src="https://oss.static.nubia.cn/blockimage/153690693445.png" data-x2="//oss.static.nubia.cn/blockimage/153690693477.png" alt="Z18mini"> <span>Z18mini</span></a>
+                                        </li>
+                                        <li><a href="//shop.nubia.com/phone"><i class="iconfont icon-jia pam img-circle text-light hidden-xs" style="background: rgb(40, 40, 40);"></i> <span>查看所有<br>手机</span></a></li>
+                                    </ul> <a href="#" class="page-arrow arrow-right hidden-xs"><i class="iconfont icon-arrow-right"></i></a></div>
+                            </div>
+                        </li>
+                        <li id="redmagicproduct" class="product"><a href="javascript:void(0)">红魔手机</a>
+                            <div class="list" style="display: none; height: 0px;">
+                                <div class="container"><a href="#" class="page-arrow arrow-left hidden-xs"><i class="iconfont icon-arrow-left"></i></a>
+                                    <ul>
+                                        <!---->
+                                        <li>
+                                            <a href="https://www.nubia.com/redmagicthree"><img src="https://oss.static.nubia.cn/blockimage/156516875510.png" data-x2="oosdomain + phone.big_image" alt=""> <span>红魔3</span></a>
+                                        </li>
+                                        <!---->
+                                        <li>
+                                            <a href="https://www.nubia.com/redmagicmars/black8gb128gb"><img src="https://oss.static.nubia.cn/blockimage/155470065110.png" data-x2="oosdomain + phone.big_image" alt=""> <span>红魔Mars</span></a>
+                                        </li>
+                                        <!---->
+                                        <!---->
+                                        <!---->
+                                    </ul> <a href="#" class="page-arrow arrow-right hidden-xs"><i class="icon-arrow-right4"></i></a></div>
+                            </div>
+                        </li>
+                        <li id="acc" class="product"><a href="javascript:void(0)">配件</a>
+                            <div class="list" style="display: none; height: 0px;">
+                                <div class="container"><a href="#" class="page-arrow arrow-left hidden-xs"><i class="iconfont icon-arrow-left"></i></a>
+                                    <ul>
+                                        <li><a href="//shop.nubia.com/accessory?cateId=31#filter-con"><i class="iconfont icon-baohuke"></i> <span>保护套</span></a></li>
+                                        <li><a href="//shop.nubia.com/accessory?cateId=22#filter-con"><i class="iconfont icon-kefu"></i> <span>耳机</span></a></li>
+                                        <li><a href="//shop.nubia.com/accessory?cateId=28#filter-con"><i class="iconfont icon-shujuxian"></i> <span>数据线</span></a></li>
+                                        <li><a href="//shop.nubia.com/accessory?cateId=27#filter-con"><i class="iconfont icon-rentou"></i> <span>周边产品</span></a></li>
+                                        <li><a href="//shop.nubia.com/accessory"><i class="iconfont icon-jia icon-sm pam img-circle text-light hidden-xs" style="background: rgb(40, 40, 40);"></i> <span>查看所有<br>配件</span></a></li>
+                                    </ul> <a href="#fakelink" class="page-arrow arrow-right hidden-xs"><i class="icon-arrow-right4"></i></a></div>
+                            </div>
+                        </li>
+                        <li id="pic" class="product"><a href="javascript:void(0)">摄影</a>
+                            <div class="list" style="display: none; height: 0px;">
+                                <div class="container">
+                                    <ul>
+                                        <li>
+                                            <a href="//www.nubia.com/neovision.php"><img src="https://static.nubia.cn/v2/images/NeoVision-logo.png" alt="" class="hidden-xs" style="height: 20px; margin: 40px 0px;"><span>努比亚摄影引擎</span></a>
+                                        </li>
+                                        <li><a href="//www.nubia.com/gallery.php"><i class="iconfont icon-kefu hidden-xs"></i><span>摄影长廊</span></a></li>
+                                        <li><a href="//www.nubia.com/timelapse.php"><i class="glyphicon glyphicon-piggy-bank hidden-xs"></i><span>延时摄影</span></a></li>
+                                        <li><a target="_blank" href="//www.nubia.com/active/starry_sky.html"><i class="iconfont icon-tuxiang hidden-xs"></i><span>星空之约</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="//www.nubia.com/service.php">服务</a></li>
+                        <li><a href="//www.nubia.com/store.php">体验店</a></li>
+                        <li><a href="https://bbs.nubia.cn/">社区</a></li>
+                        <li id="ui" class="product"><a href="javascript:void(0)">nubia UI</a>
+                            <div class="list" style="display: none; height: 0px;">
+                                <div class="container">
+                                    <ul>
+                                        <li>
+                                            <a href="http://ui.nubia.cn/"><img src="https://static.nubia.cn/v2/images/nubiaui-logo.png?v6" alt="" class="hidden-xs" style="height: 75px; margin: 15px 0px 10px;"> <span>nubia UI 6.0</span></a>
+                                        </li>
+                                        <li><a href="http://ui.nubia.cn/rom"><i class="glyphicon glyphicon-download hidden-xs"></i> <span>ROM下载</span></a></li>
+                                        <li><a href="http://bbs.ui.nubia.cn/forum.php"><i class="glyphicon glyphicon-envelope hidden-xs"></i> <span>UI社区</span></a></li>
+                                        <li><a href="http://yun.nubia.com"><i class="glyphicon glyphicon-cloud hidden-xs"></i> <span>云服务</span></a></li>
+                                        <li><a href="http://ui.nubia.cn/app/lists"><i class="glyphicon glyphicon-wrench hidden-xs"></i> <span>应用</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cart dropdown dropdown-medium text-left pull-right member menuToggle">
+                            <sapn title="" class="dropdown-toggle text-inverse cartBox" style="cursor: pointer; background: rgb(243, 93, 73);"><i class="iconfont icon-gouwuche" style="font-size: 22px;"></i>
+                                <div class="shopCarTipNav">8</div>
+                            </sapn> <span class="dropdown-arrow dropdown-arrow-inverse b" style="right: 17px;top: 71px; transition: none 0s ease 0s; text-align: center; display: none;"></span>
+                            <ul class="dropdown-menu dropdown-inverse " style="right: -10px; display: none;">
+                                <li class="c-holder">
+                                    <ul class="nav shopCarMenu">
+                                        <li role="presentation" class="shop-card">
+                                            <div class="shop-img">
+                                                <!----><img src="http://oss.static.nubia.cn/active/5c37f65d4e1ae1.png" alt="" class="shop-img"></div>
+                                            <div class="shop-detail">
+                                                <p class="shop-name">
+                                                    <!---->
+                                                    <!----><span>红魔Mars( 6GB+64GB 烈焰红)</span></p>
+                                                <p class="shop-price shop-newPrice">¥1899<span class="shop-oldPrice">¥2699</span><i class="shop-count">×2</i></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div role="presentation" class="shop-card shop-card-totle">
+                                        <p class="shop-totle">合计:<span class="shop-totle-num">¥16392</span></p> <button class="shop-buy"><a href="//shop.nubia.com/cart/show">去购物车</a></button></div>
+                                </li>
                             </ul>
                         </li>
-                    </ul>
+                        <li id="memberUnLogin" class="login dropdown dropdown-medium text-left pull-right hidden-xs member menuToggle" style="display: block; position: relative;">
+                            <sapn id="memberLoginTitle" title="" class="dropdown-toggle text-inverse" style="cursor: pointer; background-color: transparent;"><i class="iconfont icon-rentou"></i></sapn> <span class="dropdown-arrow dropdown-arrow-inverse" style="right: 17px; transition: none 0s ease 0s; bottom:-13px;display: none;"></span>
+                            <ul class="dropdown-menu dropdown-inverse">
+                                <li class="c-holder">
+                                    <ul class="nav">
+                                        <li role="presentation" class="unloginNav"><button style="font-size: 14px; color: rgb(255, 255, 255);">立即登录</button>
+                                            <p>没有账号？<a href="https://account.nubia.com/login/registerVerify.action">立即注册</a></p>
+                                        </li>
+                                        <li role="presentation"><a href="//www.nubia.com/order/member"><i class="glyphicon glyphicon-home mhm"></i>个人中心</a></li>
+                                        <li class="divider"></li>
+                                        <li role="presentation"><a href="//www.nubia.com/order/orderList"><i class="glyphicon glyphicon-object-align-bottom mhm"></i>我的订单</a></li>
+                                        <li class="divider"></li>
+                                        <li role="presentation"><a href="//www.nubia.com/order/memberCoupon"><i class="glyphicon glyphicon-object-align-bottom mhm"></i>我的优惠券</a></li>
+                                        <li class="divider"></li>
+                                        <li role="presentation"><a href="//www.nubia.com/order/memberFavorite"><i class="glyphicon glyphicon-education mhm"></i>我的收藏</a></li>
+                                        <li class="divider"></li>
+                                        <li role="presentation"><a href="//www.nubia.com/order/myReservation"><i class="glyphicon glyphicon-education mhm"></i>我的预约</a></li>
+                                        <li class="divider"></li>
+                                        <li role="presentation"><a href="//www.nubia.com/order/memberAddress"><i class="glyphicon glyphicon-education mhm"></i>收货地址</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="searchBar dropdown dropdown-medium text-left pull-right">
+                            <div class="search"><input type="text" placeholder="红魔3 "> <i class="glyphicon glyphicon-search" style="cursor: pointer; color: rgb(153, 153, 153); z-index: 100; font-size: 16px;"></i></div>
+                        </li>
 
+                    </ul>
                 </div>
-                <!-- /.navbar-collapse -->
+
             </div>
             <!-- /.container-fluid -->
         </nav>
@@ -73,21 +211,1180 @@
 
 
 
+    <!-- header script article start -->
+    <script>
+        $(function() {
+            // nav register and cart login access 
+            $('#memberUnLogin,.cart').hover(function() {
+                // over
+                $(this).children('.dropdown-arrow,.dropdown-menu ')
+                    .stop(true)
+                    .fadeIn('fast');
+
+            }, function() {
+                // out
+                $(this).children('.dropdown-arrow,.dropdown-menu ')
+                    .stop(true)
+                    .fadeOut(400);
+            });
+            // nav cart access 
+            $('#product,#redmagicproduct,#acc,#pic,#ui').hover(function() {
+                // over
+                $(this).children('.list').stop(true)
+                    .css({
+                        'display': 'block'
+                    }).animate({
+                        'height': 240,
+                    });
+
+            }, function() {
+                // out
+                $(this).children('.list').stop(true)
+                    .animate({
+                        'height': 0
+                    });
+            });
+
+            // nav phone btn function achieve
+            //left button
+            $('.arrow-left').click(function(e) {
+                e.preventDefault();
+                $(this).siblings('ul').animate({
+                    'left': 0
+                })
+            });
+            //right button
+            $('.arrow-right').click(function(e) {
+                e.preventDefault();
+                $(this).siblings('ul').animate({
+                    'left': "-1150px"
+                })
+            });
+        })
+    </script>
+
+
+
+    <!-- banner article html start -->
+    <article id="indexbanner">
+        <!-- banner html start-->
+        <section id="banner">
+            <div id="carousel-generic" class="carousel slide carousel-fade" data-ride="carousel" data-interval="400000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-generic" data-slide-to="4"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner center" role="listbox">
+                    <div class="item active">
+                        <a href="https://shop.nubia.com/product/s/1213">
+                            <img src="https://oss.static.nubia.cn/blockimage/156712904898.jpg" alt="第一张banner图" class="center-block">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://shop.nubia.com/active/fans-day.html">
+                            <img src="https://oss.static.nubia.cn/blockimage/156715695162.jpg" alt="第二张banner图" class="center-block">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://shop.nubia.com/product/s/1217">
+                            <img src="https://oss.static.nubia.cn/blockimage/156678117912.jpg" alt="第三张banner图" class="center-block">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://shop.nubia.com/product/s/1212">
+                            <img src="https://oss.static.nubia.cn/blockimage/156637063988.jpg" alt="第一张banner图" class="center-block">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://shop.nubia.com/recycle.php?v=1564474669">
+                            <img src="https://oss.static.nubia.cn/blockimage/156639025730.jpg" alt="第二张banner图" class="center-block">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <section class="middle">
+                    <div>
+                        <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
+                        </a>
+                        <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+
+        </section>
+
+        <!-- aside nav start -->
+        <div class="cl nb-ml-h-nav-box" id="leftmenu">
+            <div class="nb-ml-side">
+                <ul>
+                    <li class="nb-z-ico" data-top="0">
+                        <a class="cl" href="javascript:void(0)">
+                            <div class="seri-info">
+                                <h2>红魔系列</h2>
+                            </div>
+                        </a>
+                        <div class="nb-mlside-menu cl">
+                            <a class="cl" href="https://shop.nubia.com/product/s/1176" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/155781623696.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/155781623696.png"></div>
+                                <p>红魔3 红蓝</p>
+                            </a>
+                            <a class="cl" href="https://shop.nubia.com/product/s/1177" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/155781620327.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/155781620327.png"></div>
+                                <p>红魔3 迷彩</p>
+                            </a>
+                            <a class="cl" href="https://shop.nubia.com/product/s/1177" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/155644208069.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/155644208069.png"></div>
+                                <p>红魔3 赤焰红</p>
+                            </a>
+                            <a class="cl" href="https://shop.nubia.com/product/s/1175" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/155644208676.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/155644208676.png"></div>
+                                <p>红魔3 玄铁黑</p>
+                            </a>
+                            <a class="cl" href="https://shop.nubia.com/buy/redmagicmars/red8gb128gb" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/154711685362.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/154711685362.png"></div>
+                                <p>红魔Mars 烈焰红</p>
+                            </a>
+                            <a class="cl" href="https://shop.nubia.com/buy/redmagicmars/black8gb128gb" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/155644292915.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/155644292915.png"></div>
+                                <p>红魔Mars 曜石黑</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nb-z-ico" data-top="0">
+                        <a class="cl" href="javascript:void(0)">
+                            <div class="seri-info">
+                                <h2>阿尔法</h2>
+                            </div>
+                        </a>
+                        <div class="nb-mlside-menu cl">
+                            <a class="cl" href="https://shop.nubia.com/buy/a/black1gb8gb" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/15547184357.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/15547184357.png"></div>
+                                <p>阿尔法 伯爵黑</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nb-z-ico" data-top="0">
+                        <a class="cl" href="javascript:void(0)">
+                            <div class="seri-info">
+                                <h2>X</h2>
+                            </div>
+                        </a>
+                        <div class="nb-mlside-menu cl">
+                            <a class="cl" href="https://shop.nubia.com/buy/nubiaX/blue8gb256gb" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/154711719842.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/154711719842.png"></div>
+                                <p>X蓝金版</p>
+                            </a>
+                            <a class="cl" href="https://shop.nubia.com/buy/nubiaX/star8gb512gb" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/154711718064.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/154711718064.png"></div>
+                                <p>X星空典藏版</p>
+                            </a>
+                            <a class="cl" href="https://shop.nubia.com/buy/nubiaX/blue8gb128gb" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/154711720911.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/154711720911.png"></div>
+                                <p>X海光蓝</p>
+                            </a>
+                            <a class="cl" href="https://shop.nubia.com/buy/nubiaX/black8gb256gb" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/154296741317.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/154296741317.png"></div>
+                                <p>X黑金</p>
+                            </a>
+                            <a class="cl" href="https://shop.nubia.com/buy/nubiaX/gray8gb128gb" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/154711721728.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/154711721728.png"></div>
+                                <p>X深空灰</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nb-z-ico" data-top="0">
+                        <a class="cl" href="javascript:void(0)">
+                            <div class="seri-info">
+                                <h2>Z系列</h2>
+                            </div>
+                        </a>
+                        <div class="nb-mlside-menu cl">
+                            <a class="cl" href="https://shop.nubia.com/product/s/1212" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/156525295639.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/156525295639.png"></div>
+                                <p>Z20钻石黑</p>
+                            </a>
+                            <a class="cl" href="https://shop.nubia.com/buy/nubiaz18/black8gb128gb" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/154711732198.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/154711732198.png"></div>
+                                <p>Z18 极夜黑</p>
+                            </a>
+                            <a class="cl" href="http://shop.nubia.com/buy/nubiaz18mini/blue6gb64gb" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/15471173471.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/15471173471.png"></div>
+                                <p>Z18mini 青瓷蓝</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nb-z-ico" data-top="0">
+                        <a class="cl" href="javascript:void(0)">
+                            <div class="seri-info">
+                                <h2>周边配件</h2>
+                            </div>
+                        </a>
+                        <div class="nb-mlside-menu cl">
+                            <a class="cl" href="https://shop.nubia.com/product/s/1210" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/15578165765.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/15578165765.png"></div>
+                                <p>红魔弹夹移动电源</p>
+                            </a>
+                            <a class="cl" href="https://shop.nubia.com/product/841/1170" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/155781656630.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/155781656630.png"></div>
+                                <p>红魔3电竞魔盒</p>
+                            </a>
+                            <a class="cl" href="https://shop.nubia.com/product/808/1121" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/154649920021.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/154649920021.png"></div>
+                                <p>战神手柄</p>
+                            </a>
+                            <a class="cl" href="https://shop.nubia.com/product/738/1031" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/154649923742.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/154649923742.png"></div>
+                                <p>努比亚创意贴纸</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nb-z-ico" data-top="0">
+                        <a class="cl" href="javascript:void(0)">
+                            <div class="seri-info">
+                                <h2>专属配件</h2>
+                            </div>
+                        </a>
+                        <div class="nb-mlside-menu cl">
+                            <a class="cl" href="https://shop.nubia.com/product/830/1160" target="_self">
+                                <div class="figure"><img src="https://oss.static.nubia.cn/shopmenu/155781653773.png?imageView2/2/w/92/h/92/format/png" data-x2="//oss.static.nubia.cn/shopmenu/155781653773.png"></div>
+                                <p>nubia pods</p>
+                            </a>
+                            <a class="cl" href="https://shop.nubia.com/accessory?cateId=22#filter-con" target="_self">
+                                <div class="figure"><img src="http://oss.static.nubia.cn/upload/592e70c9455ef97.jpg?imageView2/2/w/92/h/92/format/png" data-x2="http://oss.static.nubia.cn/upload/592e70c9455ef97.jpg"></div>
+                                <p>耳机</p>
+                            </a>
+                            <a class="cl" href="https://shop.nubia.com/accessory?cateId=31&amp;id=0&amp;type=0#filter-con" target="_self">
+                                <div class="figure"><img src="http://oss.static.nubia.cn/upload/592e70c94622878.jpg?imageView2/2/w/92/h/92/format/png" data-x2="http://oss.static.nubia.cn/upload/592e70c94622878.jpg"></div>
+                                <p>保护壳</p>
+                            </a>
+                            <a class="cl" href="https://shop.nubia.com/accessory?cateId=28&amp;id=0&amp;type=0#filter-con" target="_self">
+                                <div class="figure"><img src="http://oss.static.nubia.cn/upload/592e70c953c5228.jpg?imageView2/2/w/92/h/92/format/png" data-x2="http://oss.static.nubia.cn/upload/592e70c953c5228.jpg"></div>
+                                <p>充电器</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </article>
 
 
 
 
 
 
+    <article class="floor">
+        <article class="main">
+            <section class="container">
+
+                <!-- main -header html start -->
+                <section class="main-header row">
+                    <div class="cl nb-ml-newrelease ">
+                        <div class="nb-channel-item i-left col-lg-3">
+                            <ul class="row">
+                                <li class="col-lg-4 bgc">
+                                    <a onclick="specialnubiabee('trackStructEvent','shop_index_shortcut','count',1,{})" href="//shop.nubia.com/recycle.php?v=1566781464"><i class="iconfont icon-s-circle-refresh"></i> <span>以旧换新</span></a>
+                                </li>
+                                <li class="col-lg-4">
+                                    <a href="/nbcode.php" onclick="specialnubiabee('trackStructEvent','shop_index_shortcut','count',1,{})"><i class="iconfont icon-cloud-upload"></i> <span>NB码通道</span></a>
+                                </li>
+                                <li class="col-lg-4">
+                                    <a href="/warranty.php?a=screenshow" onclick="specialnubiabee('trackStructEvent','shop_index_shortcut','count',1,{})"><i class="iconfont icon-shield"></i> <span>屏碎宝</span></a>
+                                </li>
+                                <li class="col-lg-4">
+                                    <a onclick="specialnubiabee('trackStructEvent','shop_index_shortcut','count',1,{})" href="//www.nubia.com/active/762460b1da61e90.html?v=1566781464"><i class="iconfont icon-ChevronCircleUp"></i> <span>真伪查询</span></a>
+                                </li>
+                                <li class="col-lg-4">
+                                    <a href="/service.php?sid=3"><i class="iconfont icon-shouji" onclick="specialnubiabee('trackStructEvent','shop_index_shortcut','count',1,{})"></i> <span>售后网点</span></a>
+                                </li>
+                                <li class="col-lg-4">
+                                    <a href="http://ui.nubia.cn/rom" onclick="specialnubiabee('trackStructEvent','shop_index_shortcut','count',1,{})"><i class="icon-circle-arrow-down-o iconfont"></i> <span>软件下载</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nb-ml-nr-item i-left  col-lg-3">
+                            <div class="mainimg">
+                                <a href="http://ui.nubia.cn/app/app/33" target="_blank" onclick="nubiabee('trackStructEvent','shop_index_recommend','count',1,{})"><img src="https://oss.static.nubia.cn/blockimage/152343385867.jpg" data-x2="//oss.static.nubia.cn/blockimage/152343385828.jpg" width="310" height="180"></a>
+                            </div>
+                        </div>
+                        <div class="nb-ml-nr-item i-left  col-lg-3">
+                            <div class="mainimg">
+                                <a href="https://shop.nubia.com/product/s/1212" target="_blank" onclick="nubiabee('trackStructEvent','shop_index_recommend','count',1,{})"><img src="https://oss.static.nubia.cn/blockimage/156531613817.jpg" data-x2="//oss.static.nubia.cn/blockimage/156531613865.jpg" width="310" height="180"></a>
+                            </div>
+                        </div>
+                        <div class="nb-ml-nr-item i-left  col-lg-3">
+                            <div class="mainimg">
+                                <a href="https://shop.nubia.com/product/s/1175" target="_blank" onclick="nubiabee('trackStructEvent','shop_index_recommend','count',1,{})"><img src="https://oss.static.nubia.cn/blockimage/155644402643.jpg" data-x2="//oss.static.nubia.cn/blockimage/155644402630.jpg" width="310" height="180"></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- hot phone html start -->
+                <section class="hotphone www">
+                    <dl class="cl nb-mall-m-hot">
+                        <dt class="title">
+                                            <h2>热销机型</h2>
+                                            <a href="/phone">查看更多<i class="iconfont icon-arrow-right"></i></a>
+                                            </dt>
+                        <dd class="nbc-new1-box">
+                            <ul class="cl clear" id="hotBlock">
+                                <li style="margin-bottom:13px" class="goods-hover-shows  col-lg-6 col2" id="hotBannerBlock">
+                                    <a href="https://www.nubia.com/redmagicmars/black8gb128gb" onclick="nubiabee('trackStructEvent','shop_index_phone_competitive','count',1,{})"><img style="position:relative;width:100%;" src="https://oss.static.nubia.cn/blockimage/156393635240.jpg" data-x2="//oss.static.nubia.cn/blockimage/156393635219.jpg"></a>
+                                </li>
+                                <li style="margin-bottom:13px" class="goods-hover-shows col-lg-3">
+                                    <a href="https://www.nubia.com/redmagicthree" onclick="nubiabee('trackStructEvent','shop_index_hot','count',1,{})">
+                                        <div class="nbc-pro-cont">
+                                            <div class="figure"><img src="https://oss.static.nubia.cn/blockimage/156194721722.png" data-x2="//oss.static.nubia.cn/blockimage/156194721773.png" width="290" height="248">
+                                                <div class="figure-info">
+                                                    <h2>红魔3</h2><span><span style="color:#FF4D4D">骁龙855</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="price"><span> <sup>￥</sup> <label>2999</label> </span><span class="price_old">3499</span></div>
+                                        </div>
+                                    </a>
+                                    <div class="nbc-pro-btn"><a class="btn-info" href="/product/detail/i/840">查看详情</a><a class="btn-sell" href="/buy/redmagicthree/red8gb128gb">立即购买</a></div>
+                                </li>
+                                <li style="margin-bottom:13px" class="goods-hover-shows col-lg-3">
+                                    <a href="https://shop.nubia.com/product/s/1159" onclick="nubiabee('trackStructEvent','shop_index_hot','count',1,{})">
+                                        <div class="nbc-pro-cont">
+                                            <div class="figure"><img src="https://oss.static.nubia.cn/blockimage/156403716681.png" data-x2="//oss.static.nubia.cn/blockimage/156403716682.png" width="290" height="248">
+                                                <div class="figure-info">
+                                                    <h2>努比亚阿尔法</h2><span><span style="color:#FF4D4D">可以穿戴的手机</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="price"><span> <sup>￥</sup> <label>2499</label> </span><span style="color:#ccc;"> <sup>￥</sup> <label>2999</label> </span><span> <label style=" background: #FF8D00;padding: 2px 4px;border-radius: 3px;color: #fff;font-size: 12px;line-height: 16px !important;">青铜会员价</label> </span></div>
+                                        </div>
+                                    </a>
+                                    <div class="nbc-pro-btn"><a class="btn-info" href="/product/detail/i/829">查看详情</a><a class="btn-sell" href="/buy/a/black1gb8gb">立即购买</a></div>
+                                </li>
+                                <li style="margin-bottom:13px" class="goods-hover-shows col-lg-3">
+                                    <a href="https://www.nubia.com/nubiaX" onclick="nubiabee('trackStructEvent','shop_index_hot','count',1,{})">
+                                        <div class="nbc-pro-cont">
+                                            <div class="figure"><img src="https://oss.static.nubia.cn/blockimage/154340896452.jpg" data-x2="//oss.static.nubia.cn/blockimage/154340896486.jpg" width="290" height="248">
+                                                <div class="figure-info">
+                                                    <h2>X</h2><span><span style="color:#FF4D4D">双屏黑科技</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="price" style="display: block;"><span> <sup>￥</sup> <label>2199</label> </span><span class="price_old">3299</span></div>
+                                        </div>
+                                    </a>
+                                    <div class="nbc-pro-btn"><a class="btn-info" href="/product/detail/i/760">查看详情</a><a class="btn-sell" href="/buy/nubiaX/gray6gb64gb">立即购买</a></div>
+                                </li>
+                                <li style="margin-bottom:13px" class="goods-hover-shows col-lg-3">
+                                    <a href="https://shop.nubia.com/buy/redmagicmars/red6gb64gb" onclick="nubiabee('trackStructEvent','shop_index_hot','count',1,{})">
+                                        <div class="nbc-pro-cont">
+                                            <div class="figure"><img src="https://oss.static.nubia.cn/blockimage/154683890326.jpg" data-x2="//oss.static.nubia.cn/blockimage/154683890267.jpg" width="290" height="248">
+                                                <div class="figure-info">
+                                                    <h2>红魔Mars电竞手机</h2><span><span style="color:#FF4D4D">骁龙845</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="price" style="display: block;"><span> <sup>￥</sup> <label>1899</label> </span><span class="price_old">2699</span></div>
+                                        </div>
+                                    </a>
+                                    <div class="nbc-pro-btn"><a class="btn-info" href="/product/detail/i/793">查看详情</a><a class="btn-sell" href="/buy/redmagicmars/red6gb64gb">立即购买</a></div>
+                                </li>
+                                <li style="margin-bottom:13px" class="goods-hover-shows col-lg-3">
+                                    <a href="https://www.nubia.com/nubiaz18/black8gb128gb" onclick="nubiabee('trackStructEvent','shop_index_hot','count',1,{})">
+                                        <div class="nbc-pro-cont">
+                                            <div class="figure"><img src="https://oss.static.nubia.cn/blockimage/155409741749.jpg" data-x2="//oss.static.nubia.cn/blockimage/155409741744.jpg" width="290" height="248">
+                                                <div class="figure-info">
+                                                    <h2>Z18</h2><span><span style="color:#FF4D4D">无边水滴屏</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="price"><span> <sup>￥</sup> <label>2699</label> </span><span class="price_old">3299</span></div>
+                                        </div>
+                                    </a>
+                                    <div class="nbc-pro-btn"><a class="btn-info" href="/product/detail/i/740">查看详情</a><a class="btn-sell" href="/buy/nubiaz18/black8gb128gb">立即购买</a></div>
+                                </li>
+                                <li style="margin-bottom:13px" class="goods-hover-shows col-lg-3">
+                                    <a href="https://www.nubia.com/nubiaz18mini/blue6gb64gb" onclick="nubiabee('trackStructEvent','shop_index_hot','count',1,{})">
+                                        <div class="nbc-pro-cont">
+                                            <div class="figure"><img src="https://oss.static.nubia.cn/blockimage/155409879721.png" data-x2="//oss.static.nubia.cn/blockimage/155409879711.png" width="290" height="248">
+                                                <div class="figure-info">
+                                                    <h2>Z18mini</h2><span><span style="color:#FF4D4D">2400万双摄</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="price"><span> <sup>￥</sup> <label>1599</label> </span><span class="price_old">2099</span></div>
+                                        </div>
+                                    </a>
+                                    <div class="nbc-pro-btn"><a class="btn-info" href="/product/detail/i/711">查看详情</a><a class="btn-sell" href="/buy/nubiaz18mini/blue6gb128gb">立即购买</a></div>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+
+                </section>
+
+
+                <!-- hot part html start -->
+                <section class="hotpart www">
+                    <dl class="cl nb-mall-m-hot">
+                        <dt class="title">
+                        <h2>精选配件</h2>
+                        <a href="/accessory">查看更多<i class="icon-circle-more"></i></a>
+                        </dt>
+                        <dd class="nbc-new1-box">
+                            <ul class="cl clear" id="hotBlock">
+                                <li style="margin-bottom:13px" class="goods-hover-shows  col-lg-6 col2" id="hotBannerBlock">
+                                    <a href="https://www.nubia.com/redmagicmars/black8gb128gb" onclick="nubiabee('trackStructEvent','shop_index_phone_competitive','count',1,{})"><img style="position:relative;" src="https://oss.static.nubia.cn/blockimage/154691199639.jpg" data-x2="//oss.static.nubia.cn/blockimage/156393635219.jpg"></a>
+                                </li>
+                                <li style="margin-bottom:13px" class="goods-hover-shows col-lg-3">
+                                    <a href="https://www.nubia.com/redmagicthree" onclick="nubiabee('trackStructEvent','shop_index_hot','count',1,{})">
+                                        <div class="nbc-pro-cont">
+                                            <div class="figure"><img src="https://oss.static.nubia.cn/blockimage/156194721722.png" data-x2="//oss.static.nubia.cn/blockimage/156194721773.png" width="290" height="248">
+                                                <div class="figure-info">
+                                                    <h2>红魔3</h2><span><span style="color:#FF4D4D">骁龙855</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="price"><span> <sup>￥</sup> <label>2999</label> </span><span class="price_old">3499</span></div>
+                                        </div>
+                                    </a>
+                                    <div class="nbc-pro-btn"><a class="btn-sell" href="/buy/redmagicthree/red8gb128gb">立即购买</a></div>
+                                </li>
+                                <li style="margin-bottom:13px" class="goods-hover-shows col-lg-3">
+                                    <a href="https://shop.nubia.com/product/s/1159" onclick="nubiabee('trackStructEvent','shop_index_hot','count',1,{})">
+                                        <div class="nbc-pro-cont">
+                                            <div class="figure"><img src="https://oss.static.nubia.cn/blockimage/156403716681.png" data-x2="//oss.static.nubia.cn/blockimage/156403716682.png" width="290" height="248">
+                                                <div class="figure-info">
+                                                    <h2>努比亚阿尔法</h2><span><span style="color:#FF4D4D">可以穿戴的手机</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="price"><span> <sup>￥</sup> <label>2499</label> </span><span style="color:#ccc;"> <sup>￥</sup> <label>2999</label> </span><span> <label style=" background: #FF8D00;padding: 2px 4px;border-radius: 3px;color: #fff;font-size: 12px;line-height: 16px !important;">青铜会员价</label> </span></div>
+                                        </div>
+                                    </a>
+                                    <div class="nbc-pro-btn"><a class="btn-sell" href="/buy/a/black1gb8gb">立即购买</a></div>
+                                </li>
+                                <li style="margin-bottom:13px" class="goods-hover-shows col-lg-3">
+                                    <a href="https://www.nubia.com/nubiaX" onclick="nubiabee('trackStructEvent','shop_index_hot','count',1,{})">
+                                        <div class="nbc-pro-cont">
+                                            <div class="figure"><img src="https://oss.static.nubia.cn/blockimage/154340896452.jpg" data-x2="//oss.static.nubia.cn/blockimage/154340896486.jpg" width="290" height="248">
+                                                <div class="figure-info">
+                                                    <h2>X</h2><span><span style="color:#FF4D4D">双屏黑科技</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="price"><span> <sup>￥</sup> <label>2199</label> </span><span class="price_old">3299</span></div>
+                                        </div>
+                                    </a>
+                                    <div class="nbc-pro-btn"><a class="btn-sell" href="/buy/nubiaX/gray6gb64gb">立即购买</a></div>
+                                </li>
+                                <li style="margin-bottom:13px" class="goods-hover-shows col-lg-3">
+                                    <a href="https://shop.nubia.com/buy/redmagicmars/red6gb64gb" onclick="nubiabee('trackStructEvent','shop_index_hot','count',1,{})">
+                                        <div class="nbc-pro-cont">
+                                            <div class="figure"><img src="https://oss.static.nubia.cn/blockimage/154683890326.jpg" data-x2="//oss.static.nubia.cn/blockimage/154683890267.jpg" width="290" height="248">
+                                                <div class="figure-info">
+                                                    <h2>红魔Mars电竞手机</h2><span><span style="color:#FF4D4D">骁龙845</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="price"><span> <sup>￥</sup> <label>1899</label> </span><span class="price_old">2699</span></div>
+                                        </div>
+                                    </a>
+                                    <div class="nbc-pro-btn"><a class="btn-sell" href="/buy/redmagicmars/red6gb64gb">立即购买</a></div>
+                                </li>
+                                <li style="margin-bottom:13px" class="goods-hover-shows col-lg-3">
+                                    <a href="https://www.nubia.com/nubiaz18/black8gb128gb" onclick="nubiabee('trackStructEvent','shop_index_hot','count',1,{})">
+                                        <div class="nbc-pro-cont">
+                                            <div class="figure"><img src="https://oss.static.nubia.cn/blockimage/155409741749.jpg" data-x2="//oss.static.nubia.cn/blockimage/155409741744.jpg" width="290" height="248">
+                                                <div class="figure-info">
+                                                    <h2>Z18</h2><span><span style="color:#FF4D4D">无边水滴屏</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="price"><span> <sup>￥</sup> <label>2699</label> </span><span class="price_old">3299</span></div>
+                                        </div>
+                                    </a>
+                                    <div class="nbc-pro-btn"><a class="btn-sell" href="/buy/nubiaz18/black8gb128gb">立即购买</a></div>
+                                </li>
+                                <li style="margin-bottom:13px" class="goods-hover-shows col-lg-3">
+                                    <a href="https://www.nubia.com/nubiaz18mini/blue6gb64gb" onclick="nubiabee('trackStructEvent','shop_index_hot','count',1,{})">
+                                        <div class="nbc-pro-cont">
+                                            <div class="figure"><img src="https://oss.static.nubia.cn/blockimage/155409879721.png" data-x2="//oss.static.nubia.cn/blockimage/155409879711.png" width="290" height="248">
+                                                <div class="figure-info">
+                                                    <h2>Z18mini</h2><span><span style="color:#FF4D4D">2400万双摄</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="price"><span> <sup>￥</sup> <label>1599</label> </span><span class="price_old">2099</span></div>
+                                        </div>
+                                    </a>
+                                    <div class="nbc-pro-btn"><a class="btn-sell" href="/buy/nubiaz18mini/blue6gb128gb">立即购买</a></div>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </section>
+
+
+            </section>
+            <section class="graybackground" style="background: #f4f3ef;">
+                <section class="container">
+                    <!-- main comment html start -->
+                    <section class="comment www">
+                        <dl class="cl nb-mall-m-rel">
+                            <dt class="title">
+                                            <h2>产品热评</h2>
+                                            <a href="/viewnews.php" target="_blank">查看更多 <i class="icon-circle-more"></i></a>
+                                            </dt>
+                            <dd class="nbc-new1-box">
+                                <ul class="cl row" id="hotCommentBlock">
+                                    <a class="col-lg-3 b " href="https://shop.nubia.com/viewnews.php?id=70" onclick="nubiabee('trackStructEvent','shop_index_viewnews','count',1,{})">
+                                        <li style="margin-bottom:13px" class="goods-hover-shows phone-comment"><img src="https://oss.static.nubia.cn/blockimage/154721046868.jpg" class="img-responsive " style="width:100%;">
+                                            <div class="figure-info">
+                                                <h2 class="">拯救安卓手游的“魔”物来了</h2>
+                                                <p class="ellapse-m">一键入''魔'',火力全开</p>
+                                            </div>
+                                        </li>
+                                    </a>
+                                    <a class="col-lg-3 b " href="https://shop.nubia.com/viewnews.php?id=67" onclick="nubiabee('trackStructEvent','shop_index_viewnews','count',1,{})">
+                                        <li style="margin-bottom:13px" class="goods-hover-shows phone-comment"><img src="https://oss.static.nubia.cn/blockimage/155367107530.jpg" class="img-responsive">
+                                            <div class="figure-info">
+                                                <h2 class="">设计出彩的双屏手机非你莫属</h2>
+                                                <p class="ellapse-m">突破性设计-双面屏</p>
+                                            </div>
+                                        </li>
+                                    </a>
+                                    <a class="col-lg-3 b " href="https://shop.nubia.com/viewnews.php?id=68" onclick="nubiabee('trackStructEvent','shop_index_viewnews','count',1,{})">
+                                        <li style="margin-bottom:13px" class="goods-hover-shows phone-comment"><img src="https://oss.static.nubia.cn/blockimage/155367108591.jpg" class="img-responsive">
+                                            <div class="figure-info">
+                                                <h2 class="">无边框遇上水滴屏，「无界」诞生了</h2>
+                                                <p class="ellapse-m">探索无界，你值得拥有</p>
+                                            </div>
+                                        </li>
+                                    </a>
+                                    <a class="col-lg-3 b " href="https://www.nubia.com/viewnews.php?id=64" onclick="nubiabee('trackStructEvent','shop_index_viewnews','count',1,{})">
+                                        <li style="margin-bottom:13px" class="goods-hover-shows phone-comment"><img src="https://oss.static.nubia.cn/blockimage/155367109475.jpg" class="img-responsive">
+                                            <div class="figure-info">
+                                                <h2 class="">我的字典里没有怂，只有刚</h2>
+                                                <p class="ellapse-m">第一部游戏手机</p>
+                                            </div>
+                                        </li>
+                                    </a>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </section>
+
+
+
+                    <!-- main video html start -->
+                    <section class="video www">
+                        <dl class="cl nb-mall-m-rel">
+                            <dt class="title">
+                                                <h2>视频</h2>
+                                                <a href="/video.php" target="_blank">查看更多 <i class="icon-circle-more"></i></a>
+                                            </dt>
+                            <dd class="nbc-new1-box">
+                                <ul class="cl row" id="vedioBlock">
+                                    <li style="margin-bottom:13px" class="goods-hover-shows phone-play col-lg-3">
+                                        <a class="btnplay" href="https://oss.static.nubia.cn/active/5d4bb05927ee152.mp4">
+                                            <div class="figure "><img src="https://oss.static.nubia.cn/blockimage/15652585205.jpg" class="img-responsive" style="width:100%"></div>
+                                        </a>
+                                        <div class="figure-info">
+                                            <h2>Z20</h2>
+                                            <p>4800万超清双屏自拍</p>
+                                        </div>
+                                    </li>
+                                    <li style="margin-bottom:13px" class="goods-hover-shows phone-play col-lg-3">
+                                        <a class="btnplay" href="https://oss.static.nubia.cn/active/5cc51c9accffd84.mp4">
+                                            <div class="figure "><img src="https://oss.static.nubia.cn/blockimage/155771604472.jpg" class="img-responsive"></div>
+                                        </a>
+                                        <div class="figure-info">
+                                            <h2>红魔3</h2>
+                                            <p>5000mAh电池+27W快充</p>
+                                        </div>
+                                    </li>
+                                    <li style="margin-bottom:13px" class="goods-hover-shows phone-play col-lg-3">
+                                        <a class="btnplay" href="https://oss.static.nubia.cn/active/5cab07b76bb8462.mp4">
+                                            <div class="figure "><img src="https://oss.static.nubia.cn/blockimage/155479296538.jpg" class="img-responsive"></div>
+                                        </a>
+                                        <div class="figure-info">
+                                            <h2>努比亚阿尔法</h2>
+                                            <p>可以穿戴的手机</p>
+                                        </div>
+                                    </li>
+                                    <li style="margin-bottom:13px" class="goods-hover-shows phone-play col-lg-3">
+                                        <a class="btnplay" href="https://oss.static.nubia.cn/upload/5bfe5584d678822.mp4">
+                                            <div class="figure "><img src="https://oss.static.nubia.cn/blockimage/154340969340.jpg" class="img-responsive"></div>
+                                        </a>
+                                        <div class="figure-info">
+                                            <h2>红魔Mars电竞手机</h2>
+                                            <p>骁龙845</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </section>
+
+                    <!-- main video html start -->
+                    <section class="surver www">
+                        <dl class="cl nb-mall-m-rel">
+                            <dt class="title">
+                                                <h2>服务</h2>
+                                                <a href="/service.php" target="_blank">查看更多 <i class="icon-circle-more"></i></a>
+                                            </dt>
+                            <dd class="nbc-new1-box">
+                                <ul class="cl row">
+                                    <li target="_blank" class="goods-hover-shows phone-server href1 col-lg-6" style="magin-bottom:0px;">
+                                        <div class="figure-info">
+                                            <i class="iconfont icon-shouji"></i>
+                                            <div class="info-text">
+                                                <a href="http://www.nubia.com/active/postsalesservice.html" onclick="specialnubiabee('trackStructEvent','shop_index_service','count',1,{})" target="_blank">
+                                                    <h2>售后政策</h2>
+                                                    <p>了解nubia努比亚的服务和保修等相关政策。</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li target="_blank" class="goods-hover-shows phone-server href2 col-lg-6" style="magin-bottom:0px;">
+                                        <div class="figure-info">
+                                            <i class="iconfont icon-cloud-upload"></i>
+                                            <div class="info-text">
+                                                <a href="http://www.nubia.com/active/c10bc50255fb76f.html" onclick="specialnubiabee('trackStructEvent','shop_index_service','count',1,{})" target="_blank">
+                                                    <h2>特色服务</h2>
+                                                    <p class="ellapse-m">
+                                                        我们为您准备了一系列与众不同的服务内容，从意外宝到上门服务，通过电话及服务网点获取支持或安排维修。
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </section>
+
+                    <!-- main phone-surver -->
+                    <section class="phone-surver">
+                        <div class="phone-server-list-wrap" style="/* display: none; */">
+                            <div class="goods-hover-shows phone-server-list row" style="height:117px;">
+                                <div class="server-list-item col-lg-3">
+                                    <a href="https://www.nubia.com/active/c10bc50255fb76f.html#faq03" onclick="specialnubiabee('trackStructEvent','shop_index_service','count',1,{})" target="_blank">
+                                        <i class="iconfont icon-cloud-upload"></i>
+                                        <span>7天无理由退货</span>
+                                    </a>
+                                </div>
+                                <div class="server-list-item col-lg-3">
+                                    <a href="https://www.nubia.com/active/c10bc50255fb76f.html#faq02" onclick="specialnubiabee('trackStructEvent','shop_index_service','count',1,{})" target="_blank">
+                                        <i class="iconfont icon-cloud-upload"></i>
+                                        <span>保内免费上门维修</span>
+                                    </a>
+                                </div>
+                                <div class="server-list-item col-lg-3">
+                                    <a href="https://www.nubia.com/active/9a8b3c2eae31c71.html#faq03" onclick="specialnubiabee('trackStructEvent','shop_index_service','count',1,{})" target="_blank">
+                                        <i class="iconfont icon-cloud-upload"></i>
+                                        <span>全场59元免运费</span>
+                                    </a>
+                                </div>
+                                <div class="server-list-item col-lg-3">
+                                    <a href="https://www.nubia.com/active/96dbde6b862724c.html" target="_blank">
+                                        <i class="iconfont icon-cloud-upload"></i>
+                                        <span>查找线下商店</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+
+            </section>
+
+        </article>
+
+
+        <!-- main script start -->
+        <script>
+            $(function() {
+                // main-header hover style
+                $('.nb-channel-item li').hover(function() {
+                    // over
+                    $(this).addClass('bgc').siblings().removeClass('bgc')
+                });
+            })
+        </script>
+
+
+
+        <!-- footer html start  -->
+        <footer>
+            <div id="footer-menu" style="background-color:#f4f3ef;">
+                <div class="bg-base-dark">
+                    <div class="container">
+                        <div class="bottom-menu bottom-menu-large">
+                            <div class="row">
+
+                                <div class="col-sm-2">
+                                    <h5 class="title">关于我们</h5>
+                                    <ul class="bottom-links">
+
+                                        <li>
+
+                                            <a target="_blank" href="https://www.nubia.com/active/ff360992019fe95.html?#1">
+                                                
+                                                关于nubia
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="/viewnews.php">
+                                                
+                                                产品热评
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="/store.php">
+                                                
+                                                体验店
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="/news.php">
+                                                
+                                                新闻中心
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="https://www.nubia.com/video.php">
+                                                
+                                                视频长廊
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="https://www.nubia.com/active/ff360992019fe95.html?#2">
+                                                
+                                                联系我们
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="https://shop.nubia.com/active/companybuy.html">
+                                                
+                                                企业购
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="/links.php">
+                                                
+                                                友情链接
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="https://prm.nubia.com/hzregister/index">
+                                                
+                                                合作伙伴
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="col-sm-2">
+                                    <h5 class="title">手机</h5>
+                                    <ul class="bottom-links">
+
+                                        <li>
+
+                                            <a target="_blank" href="https://www.nubia.com/Z20">
+                                                
+                                                Z20
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="https://www.nubia.com/redmagicthree">
+                                                
+                                                红魔3
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="https://www.nubia.com/a/black1gb8gb">
+                                                
+                                                阿尔法
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="/redmagicmars">
+                                                
+                                                红魔Mars游戏电竞手机
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="/nubiaX">
+                                                
+                                                X
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="/nubiaZ18">
+                                                
+                                                Z18
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="/nubiaZ18mini">
+                                                
+                                                Z18mini 
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="col-sm-2">
+                                    <h5 class="title">配件</h5>
+                                    <ul class="bottom-links">
+
+                                        <li>
+
+                                            <a target="_blank" href="/accessory?cateId=31#filter-con">
+                                                
+                                                保护套
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="/accessory?cateId=22#filter-con">
+                                                
+                                                耳机
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="/accessory?cateId=28#filter-con">
+                                                
+                                                数据线/充电器
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="/accessory?cateId=27#filter-con">
+                                                
+                                                周边产品
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="col-sm-2">
+                                    <h5 class="title">服务中心</h5>
+                                    <ul class="bottom-links">
+
+                                        <li>
+
+                                            <a target="_blank" href="/member.php">
+                                                
+                                                个人中心
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="/service.php">
+                                                
+                                                售后服务
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="/service.php?sid=3">
+                                                
+                                                售后网点
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="https://www.nubia.com/active/c10bc50255fb76f.html">
+                                                
+                                                特色服务
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="http://ui.nubia.cn/rom">
+                                                
+                                                软件下载
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="http://shop.nubia.com/active/1.html">
+                                                
+                                                产品安全
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="col-sm-2">
+                                    <h5 class="title">关注我们</h5>
+                                    <ul class="bottom-links">
+
+                                        <li>
+
+                                            <a target="_blank" href="http://bbs.nubia.cn/">
+                                                
+                                                官方社区
+                                            </a>
+                                        </li>
+
+                                        <li>
+
+                                            <a target="_blank" href="https://weibo.com/nubiamobile">
+                                                
+                                                新浪微博
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="col-sm-2">
+                                    <h5 class="title">全国服务热线</h5>
+                                    <ul class="bottom-links">
+
+                                        <li>
+
+                                            <a target="_blank" href="tel:00864007006600">
+                                                <i class="icon-phone  mrm"></i> 400-700-6600
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <small class="text-light">周一到周日 8:30-20:30<br> (全年无休)</small>
+
+                                        </li>
+
+                                        <li>
+                                        </li>
+                                        <li style="margin-top: 15px;">
+                                            <a target="_blank" onclick="live800talk()">
+                                                <img src="https://oss.static.nubia.cn/upload/5b7f58ccc7c2843.png" style="width: 120px;">
+                                            </a>
+                                        </li>
+
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="master-footer">
+                <div class="container">
+                    <a href="https://www.nubia.com">
+                        <img width="105" alt="Nubia Logo" src="../image/nubia-logo-x2.png">
+                    </a>
+                    <div style="font-size: 32px;">
+                        <a href="https://www.weibo.com/p/1006062156294570" class="text-weibo" target="_blank"><span class="iconfont icon-weibo"></span></a>
+                        <a href="javascript:void(0)" class="text-wechat" target="_blank">
+                            <span class="iconfont icon-weixin"></span>
+                            <b class="wxewm" style="display: none;"><img src="http://api.k780.com/?app=qr.get&data=http://stu.1000phone.net&level=L&size=6&appkey=43975&sign=f9093d99518ad66d10e9967d2b0dc0d8"><span></span></b>
+                        </a>
+                        <a style="display:none;" onclick="live800talk()" href="javascript:void(0)" class="text-nubia"><span class="iconfont icon-kefu"></span></a>
+                    </div>
+                    <div class="nubia-foot-nav">
+                        <section> 2012-2019 努比亚技术有限公司 版权所有
+                            <div class="about">
+                                <i></i>
+                                <a href="/active/privacy.html">隐私政策</a>
+                                <i></i>
+                                <a href="/active/cookies.html">关于Cookie</a>
+                            </div>
+
+                            <div class="btn-group dropup" style="">
+                                <button id="selectCountry" class="btn btn-nn btn-secondary" style="margin-top: 0;" data-toggle="modal" data-target="#CountryModal">
+                                    <i style="margin-bottom: 0;" class="flag mrs flag-cn"></i>简体中文
+                                </button>
+                            </div>
+                            <br>
+                            <a href="http://beian.miit.gov.cn/" target="_blank">
+                                <img style="vertical-align: middle;height: 16px;margin-right: 5px;" src="https://oss.static.nubia.cn/active/5c416b62880a275.png?v=1566781464">
+
+                                <span style="line-height: 14px; color:#999;"> 粤ICP备10006213号</span>
+                            </a>
+                            <a href="https://szcert.ebs.org.cn/D52B1891-CB9A-4FD0-8BC6-1D5650B567CE" target="_blank">
+                                <img title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示" border="0" style="border-width:0px;border:hidden; border:none;vertical-align: middle;height: 18px;" src="https://oss.static.nubia.cn/upload/57fc5f6def76275.jpg?v=1566781464">
+                                <span style="line-height: 14px; color:#999;"> ICP经营许可证编号：粤B2-20120688</span>
+                            </a>
+                            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502000309">
+                                <img style="vertical-align: middle;height: 14px;margin-right: 5px;" src="https://oss.static.nubia.cn/upload/57c5599015f1558.png?v=1566781464">
+                                <span style="line-height: 14px; color:#999;">粤公网安备 44030502000309号</span>
+                            </a>
+                            <br>
+                            <a class="cx-site" style="margin-left: 10px" target="_blank" href="https://ss.knet.cn/verifyseal.dll?sn=e13051344030040649k5ci000000&amp;tp=icon1&amp;ct=df&amp;a=1&amp;pa=0.5904676486968843">
+                                <img style="height: 30px;" src="https://rr.knet.cn/static/images/logo/cnnic.png" alt="">
+                            </a>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+        <!-- footer script start -->
+        <script>
+            $(function() {
+                $('.text-wechat').hover(function() {
+                    $('.wxewm').fadeIn()
+                }, function() {
+                    $('.wxewm').fadeOut()
+                })
+            })
+        </script>
+    </article>
+
+    <!-- fixed aside left html start -->
+    <section>
+        <aside class="asideleft">
+            <ul>
+                <li class="actived">热销机型</li>
+                <li>精选配件</li>
+                <li>产品热评</li>
+                <li>视频</li>
+                <li>服务</li>
+            </ul>
+        </aside>
+    </section>
+
+
+    <!-- aside nav left script start -->
+    <script>
+        $(function() {
+            //页面打开调用判断是否显示电梯导航
+            getTool();
+            //判断显示隐藏电梯导航  函数
+            function getTool() {
+                if ($(document).scrollTop() >= $(".floor").offset().top - 200) {
+                    $(".asideleft").slideDown(300);
+                } else {
+                    $(".asideleft").slideUp(300);
+                }
+                //电梯导航切换样式
+                $(".www").each(function(i, ele) {
+                    if ($(document).scrollTop() >= $(ele).offset().top) {
+                        $(".asideleft").find("li").removeClass("actived").eq(i).addClass("actived")
+                    }
+                })
+            }
+            $(window).scroll(function() {
+                    getTool();
+                })
+                //电梯导航操作
+            $(".asideleft").on("click", "li", function() {
+                var goto = $(".www").eq($(this).index()).offset().top;
+                $("html, body").animate({
+                    scrollTop: goto
+                })
+            })
+            $('.asideleft li').hover(function() {
+                // over
+                $(this).addClass('actived').siblings().removeClass('actived');
+            }, function() {
+                // out
+            });
+        })
+    </script>
+
+
+    <section>
+        <div id="nb-extra-tool">
+            <div class="nb-extra-tool-warp">
+                <ul>
+                    <li class="nb-et-shopCar">
+                        <div class="shopCarTip"></div>
+                        <a class="nb-shopCar-ico icon-circle_caddie iconfont icon-gouwuche" href="https://shop.nubia.com/cart/show" title="购物车" target="_blank"></a>
+                        <div class="nb-et-shopCar-layer">
+                            <div class="nb-et-shopCar-layer-main">
+                                <p>购物车</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nb-et-apk">
+                        <a class="icon-circle_bag iconfont icon-s-circle-refresh" href="http://ui.nubia.cn/app/33"></a>
+                        <div class="nb-et-apk-layer">
+                            <div class="nb-et-apk-layer-main">
+                                <img src="http://api.k780.com/?app=qr.get&data=http://stu.1000phone.net&level=L&size=6&appkey=43975&sign=f9093d99518ad66d10e9967d2b0dc0d8">
+                                <p>nubia商城</p>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="nb-et-service">
+                        <a class="nb-service-ico icon-circle_headphones-mic iconfont icon-cloud-upload" onclick="live800talk()" title="在线客服" target="_blank"></a>
+                        <div class="nb-et-service-layer">
+                            <div class="nb-et-service-layer-main">
+                                <p>在线客服</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nb-et-top" style="display: list-item;">
+                        <a class="icon-circle_arrow-up iconfont icon-ChevronCircleUp" href="javascript:void(0)" title="回到顶部"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- aside nav right script start -->
+    <script>
+        $(function() {
+            $('.nb-et-top').click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                })
+            })
+        })
+    </script>
 
 
 
 
-
-    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
