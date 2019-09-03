@@ -31,6 +31,9 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/cart.js"></script>
+
 </head>
 
 <body style="padding-top:66px;" <!-- header html article start -->
@@ -164,7 +167,7 @@
                                         </li>
                                     </ul>
                                     <div role="presentation" class="shop-card shop-card-totle">
-                                        <p class="shop-totle">合计:<span class="shop-totle-num">¥16392</span></p> <button class="shop-buy"><a href="https://shop.nubia.com/cart/show">去购物车</a></button></div>
+                                        <p class="shop-totle">合计:<span class="shop-totle-num">¥16392</span></p> <button class="shop-buy"><a href="../html/cart.html">去购物车</a></button></div>
                                 </li>
                             </ul>
                         </li>
@@ -174,7 +177,7 @@
                                 <li class="c-holder">
                                     <ul class="nav">
                                         <li role="presentation" class="unloginNav"><button style="font-size: 14px; color: rgb(255, 255, 255);">立即登录</button>
-                                            <p>没有账号？<a href="https://account.nubia.com/login/registerVerify.action">立即注册</a></p>
+                                            <p>没有账号？<a href="../html/regest-login.html">立即注册</a></p>
                                         </li>
                                         <li role="presentation"><a href="https://www.nubia.com/order/member"><i class="glyphicon glyphicon-home mhm"></i>个人中心</a></li>
                                         <li class="divider"></li>
@@ -275,7 +278,10 @@
                         <div class="bg-cart"></div>
                         <div class="container">
                             <div class="cart-con">
-                                <div class="cart-h1">共&nbsp;<span style="color: red;">9</span>&nbsp;件商品</div>
+                                <div class="cart-h1">
+                                    <input type="checkbox" name="selectall" id="selectall"> 共&nbsp;
+                                    <span style="color: red;">9</span>&nbsp;件商品(双击选中)
+                                </div>
                                 <table cellspacing="0" cellpadding="0" border="0" class="cart-thead table table-hover table-bordered">
                                     <thead>
                                         <tr>
@@ -288,7 +294,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <tr class="p-0">
                                             <td><img src="https://oss.static.nubia.cn/active/5c37f65d4e1ae1.png?imageView2/2/w/100/h/100/format/png"></td>
                                             <td class="productname">
                                                 <!---->
@@ -299,10 +305,9 @@
                                             </td>
                                             <td> ￥2099</td>
                                             <td>
-                                                <div class="btn-cnts"><span class="table-cut">-</span> <input type="text" maxlength="2" readonly="readonly" class="num cart-cnt"> <span class="table-add">+</span></div>
+                                                <div class="btn-cnts"><span class="table-cut">-</span> <input type="text" maxlength="2" readonly="readonly" class="num cart-cnt" value="1"> <span class="table-add">+</span></div>
                                             </td>
-                                            <td class="sum" style="line-height: 1.8;">
-                                                ￥12594.00
+                                            <td class="sum" style="line-height: 1.8;">￥12594.00
                                                 <!---->
                                             </td>
                                             <td><a title="删除" class="cart-close close">×</a></td>
@@ -318,32 +323,9 @@
                                             </td>
                                             <td> ￥1899</td>
                                             <td>
-                                                <div class="btn-cnts"><span class="table-cut">-</span> <input type="text" maxlength="2" readonly="readonly" class="num cart-cnt"> <span class="table-add">+</span></div>
+                                                <div class="btn-cnts"><span class="table-cut">-</span> <input type="text" maxlength="2" readonly="readonly" class="num cart-cnt" value="1"> <span class="table-add">+</span></div>
                                             </td>
-                                            <td class="sum" style="line-height: 1.8;">
-                                                ￥3798.00
-                                                <!---->
-                                            </td>
-                                            <td><a title="删除" class="cart-close close">×</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="https://oss.static.nubia.cn/active/5caab828be8847.png?imageView2/2/w/100/h/100/format/png"></td>
-                                            <td class="productname">
-                                                <!---->
-                                                <!---->
-                                                <!---->
-                                                <!----><a target="_blank" productid="1159" href="/product/s/1159" class="pdt-title">努比亚阿尔法( 1G+8G 伯爵黑（联通版）)</a>
-                                                <ul style="margin-top: 5px;">
-                                                    <li><span class="bg-gift">赠品</span>
-                                                        <!----><a href="/product/s/1160" productid="1159" target="_blank">万魔联名 （时尚真无线耳机）(  黑色)</a></li>
-                                                </ul>
-                                            </td>
-                                            <td> ￥2999</td>
-                                            <td>
-                                                <div class="btn-cnts"><span class="table-cut">-</span> <input type="text" maxlength="2" readonly="readonly" class="num cart-cnt"> <span class="table-add">+</span></div>
-                                            </td>
-                                            <td class="sum" style="line-height: 1.8;">
-                                                ￥2999.00
+                                            <td class="sum" style="line-height: 1.8;">￥3798.00
                                                 <!---->
                                             </td>
                                             <td><a title="删除" class="cart-close close">×</a></td>
@@ -389,7 +371,7 @@
                                 </div>
                                 <div class="btn-cart-groups">
                                     <form id="orderCheck" method="post" action="/order/check"><input type="hidden" name="buy_from" value="1"> <input type="hidden" name="order_source" value="1"> <input id="params" type="hidden" name="item_param" value="">
-                                        <div class="btn-cart-groups-inner"><a href="/shop" target="_blank" class="pay-continue">继续购物</a> <a class="go-pay">立即结算</a></div>
+                                        <div class="btn-cart-groups-inner"><a href="./nubia-index.html" target="_blank" class="pay-continue">继续购物</a> <a class="go-pay">立即结算</a></div>
                                     </form>
                                 </div>
                             </div>

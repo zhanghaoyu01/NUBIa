@@ -1,3 +1,4 @@
+@charset 'utf-8';
 input {
   outline: 0;
 }
@@ -33,6 +34,9 @@ h2 {
 }
 .row {
   margin: 0 !important;
+}
+.nav > li > a:hover {
+  background-color: transparent !important;
 }
 /* header css start  */
 .indexheader .nav > li:not(li:nth-last-of-type(2)) {
@@ -282,6 +286,7 @@ h2 {
 }
 .indexheader .nav > li:nth-last-of-type(1) {
   position: relative !important;
+  float: left;
 }
 .indexheader .unloginNav {
   display: flex!important;

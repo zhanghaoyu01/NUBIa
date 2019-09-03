@@ -31,6 +31,9 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="../js/description.js"></script>
+    <script src="../js/cookie.js"></script>
+
 
 </head>
 
@@ -170,7 +173,7 @@
                                         </li>
                                     </ul>
                                     <div role="presentation" class="shop-card shop-card-totle">
-                                        <p class="shop-totle">合计:<span class="shop-totle-num">¥16392</span></p> <button class="shop-buy"><a href="//shop.nubia.com/cart/show">去购物车</a></button></div>
+                                        <p class="shop-totle">合计:<span class="shop-totle-num">¥16392</span></p> <button class="shop-buy"><a href="./html/cart.html">去购物车</a></button></div>
                                 </li>
                             </ul>
                         </li>
@@ -180,7 +183,7 @@
                                 <li class="c-holder">
                                     <ul class="nav">
                                         <li role="presentation" class="unloginNav"><button style="font-size: 14px; color: rgb(255, 255, 255);">立即登录</button>
-                                            <p>没有账号？<a href="https://account.nubia.com/login/registerVerify.action">立即注册</a></p>
+                                            <p>没有账号？<a href="../html/regest-login.html">立即注册</a></p>
                                         </li>
                                         <li role="presentation"><a href="//www.nubia.com/order/member"><i class="glyphicon glyphicon-home mhm"></i>个人中心</a></li>
                                         <li class="divider"></li>
@@ -263,6 +266,7 @@
             });
         })
     </script>
+
 
 
 
@@ -438,7 +442,7 @@
                                             </p>
                                             <div class="num">
                                                 <div class="minus"><img src="https://shop-soa-static.nubia.com/images/buy_mobile/minus.png?v=1566781464"></div>
-                                                <div class="totle">1</div>
+                                                <div class="totle" contenteditable="false" style="overflow: hidden;line-height: 48px;">1</div>
                                                 <div class="add"><img src="https://shop-soa-static.nubia.com/images/buy_mobile/add.png?v=1566781464"></div>
                                             </div>
                                             <!---->
@@ -513,7 +517,7 @@
                                     </div> <a href="/active/8934837741ec16c.html" class="near_shop" style="display: none; position: relative; top: -30px; left: 180px;">查找附近的店&gt;&gt;</a></div>
                             </div>
                         </div>
-                        <div id="top_div" class="fixed-btn" style="display: none;">
+                        <div id="top_div" class="fixed-btn">
                             <div class="fixed-btn-div">
                                 <div class="fixedLeft"><span class="fixedProductDetail fixedCur">商品详情</span> <span class="fixedProductIntro">规则参数</span></div>
                                 <div class="fixedRight"><img src="https://oss.static.nubia.cn/active/5caab828be8847.png" alt="">
