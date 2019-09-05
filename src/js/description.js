@@ -37,7 +37,8 @@
             num++;
             $('.totle').text(num)
         });
-        $('.totle').contextmenu(function() {
+        $('.totle').dblclick(function(e) {
+            e.stopPropagation();
             $(this).attr('contenteditable', true);
         });
         $('.totle').click(function() {
@@ -63,20 +64,22 @@
                     }
                 },
                 success: function(res) {
+                    let imgurl = res.imgurl.slice(1, -1);
                     const mainscale = $('.main-scale');
                     mainscale.find('.main_right_p span').html(res.title);
                     mainscale.find('.sellPoint span').html(res.subtitle);
                     mainscale.find('.PriceContent span').first().text(res.price);
-                    mainscale.find('#spic img').attr('src', res.imgurl[0]);
-                    mainscale.find('#bpic').attr('src', res.imgurl[0]);
+                    mainscale.find('#spic img').attr('src', JSON.parse(imgurl)[0]);
+                    mainscale.find('#bpic').attr('src', JSON.parse(imgurl)[0]);
 
                     // mainscale.find('#list li img').each(function(index,elm){
                     //     $(elm).attr('src',res.imgurl[index])
                     // });
-                    $.each(res.imgurl, function(index, value) {
+                    var $listli = '';
+                    $.each(JSON.parse(imgurl), function(index, value) {
                         $listli += `
                                     <li>
-                                        <img src="${value}" />
+                                        <img src=${value} />
                                     </li>
                                     `;
                     })
@@ -90,8 +93,15 @@
                         let flag = confirm('点击确定，立即跳转自动跳转到购物车！');
                         if (flag) {
                             location.href = 'cart.html';
+                        } else {
+                            location.reload()
                         }
                     });
+                    $('#list ul img').on('mouseover', function() {
+                        let url = $(this).attr('src')
+                        $('#spic img,#bpic').attr('src', url)
+                    })
+
                 }
             });
             //将id和商品数量保存至cookie中

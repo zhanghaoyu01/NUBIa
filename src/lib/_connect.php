@@ -2,7 +2,7 @@
 header('content-type:text/html;charset=utf-8');
 
 $mysql_conf = array(
-    'host'=>'localhost:3306',
+    'host'=>'localhost',
     'db_user'=>'root',
     'db_pwd'=>'',
     'db'=>'nubia'

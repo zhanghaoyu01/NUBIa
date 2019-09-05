@@ -233,6 +233,9 @@ a {
   line-height: 20px;
   margin-top: 10px;
 }
+.rightLabel2 a {
+  display: none;
+}
 .hb {
   width: 85%;
   display: flex;

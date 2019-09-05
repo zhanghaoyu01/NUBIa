@@ -1,4 +1,21 @@
 (function() {
+    // $(window).unload(function() {
+    //     let flag = confirm('确定要退出当前页面么？');
+    //     if (flag) {
+    //         close();
+    //     } else {
+    //         location.reload();
+    //     }
+    // })
+    // $(window).blur(function() {
+    //     var blurTime = Date.now();
+    // });
+    // $(window).focus(function() {
+    //     var focusTime = Date.now();
+    //     if (focusTime - blurTime > 100 * 60 * 10) {
+    //         alert(`欢迎回来，${cookie.get('username')}`)
+    //     }
+    // });
     var cookie = {
         get: function(key) {
             if (document.cookie) { //判断是否有cookie数据
@@ -36,7 +53,7 @@
         if (cookie.get('username')) { //有username cookie 则欢迎您
             $('.unloginNav').html(`
                 <a href="//www.nubia.com/order/member">欢迎您，
-                    <span class="userName" style="font-weight: bold;">${cookie.get(username)}
+                    <span class="userName" style="font-weight: bold;">${cookie.get('username')}
                     </span>
                 </a>
             `);
@@ -55,10 +72,10 @@
                     backgroundColor: '#282828'
                 })
             });
-            $('.c-holder .nav').append(`
+            $('#memberUnLogin .c-holder .nav').append(`
             <li role="presentation" class="exit">
-                <a href="//www.nubia.com/profile.php?a=logout&amp;url=">
-                    <i class="iconfont icon-rentou">
+                <a>
+                    <i class="iconfont icon-rentou" style="font-size:15px;color:#888;">
                     </i>
                     退出 
                 </a>
@@ -89,11 +106,21 @@
             });
         }
 
+        // nav top .exit 的跳转
+        $('.exit').click(function() {
+            cookie.remove('username');
+            location.reload();
+        });
+        // nav top 立即登录的跳转  .unloginNav
+        $('.unloginNav').click(function() {
+            location.href = '../html/regest-login.html';
+        });
+
         //立即登录的跳转
         $('.unloginNav').find('button').click(function(e) {
             e.stopPropagation();
-            Location.href = '../html/nubia-index.html'
-        })
+            Location.href = '../html/regest-login.html'
+        });
 
 
         // ajax获取数据
@@ -109,34 +136,34 @@
                 },
                 dataType: "json",
                 success: function(res) {
-                    console.log(res);
                     var navcart = '';
                     res.forEach((elm, i) => {
                         var arr = shop.filter((val, i) => { //筛选cookie 中相匹配的数据对象
                             return val.id === elm.id;
                         });
+                        let imgurl = elm.imgurl.slice(1, -1);
                         //nav fixtop cart
-                        navcart = `
+                        navcart += `
                             <li role="presentation" class="shop-card">
                                 <div class="shop-img">
-                                    <!----><img src="${elm.imgurl[0]}" alt="" class="shop-img"></div>
+                                    <img src="${JSON.parse(imgurl)[0]}" alt="" class="shop-img"></div>
                                 <div class="shop-detail">
                                     <p class="shop-name">
-                                        <!---->
-                                        <!----><span>elm.title</span></p>
+                                        <span>${elm.title}</span></p>
                                     <p class="shop-price shop-newPrice">¥${elm.price}<span class="shop-oldPrice">¥2699</span><i class="shop-count">×${arr[0].num}</i></p>
                                 </div>
                             </li>
                             `;
-                        $('.nav.shopCarMenu').append(navcart);
-                        $('.shop-totle-num').html(totalPrice);
                     });
+                    $('.nav.shopCarMenu').append(navcart);
 
                     let allprice = 0; //总价
                     let allnum = 0; //总的数量。
                     $('.dropdown-menu .c-holder').each(function(index, element) { //遍历复选框是否选中
                         allprice += parseInt($(element).find('.shop-price.shop-newPrice').text().slice(1));
+                        console.log("'么么哒 ': allprice", allprice)
                         allnum += parseInt($(element).find('.shop-count').text());
+                        console.log("'么么哒 ': allnum", allnum)
                     });
                     $('.shop-totle-num').html('￥' + allprice.toFixed(2));
                     $('.shopCarTipNav').html(allnum)
