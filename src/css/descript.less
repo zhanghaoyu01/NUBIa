@@ -639,7 +639,6 @@ a.esim_a {
     border-bottom: 1px solid #ddd;
     background-color: rgba(255, 255, 255, 1);
     text-align: right;
-    line-height: 40px;
 }
 .fixed-btn-div {
     margin: 0 auto;
@@ -653,10 +652,10 @@ a.esim_a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .fixedLeft span.fixedCur {
+    span.fixedCur {
         color: rgb(255,94,94)!important;
     }
-    .fixedLeft span:first-child {
+    span:first-child {
         border-right: 1px solid rgb(208,208,208);
     }
     span {
@@ -687,6 +686,9 @@ a.esim_a {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        p{
+            margin-bottom: 0 !important;
+        }
         .fixedInfoName {
             color: rgb(60,60,60);
             font-size: 15px;

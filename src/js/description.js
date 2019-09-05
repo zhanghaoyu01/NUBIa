@@ -1,6 +1,19 @@
 (function($) {
     $(function() {
+        // .detail-tab的tab切换
+        $('.detail-tab .detailtab li').click(function() {
+            $(this).addClass('active')
+                .siblings().removeClass('active');
+            $('.tab-pane').eq($(this).index()).addClass('active').css({
+                'display': 'block'
+            }).siblings('.tab-pane').removeClass('active').css('display', 'none');
+        });
 
+        // .fixedProductDetail 的tabs 切换
+        $('.fixedLeft span').click(function() {
+            $(this).addClass('fixedCur').siblings().removeClass('fixedCur');
+            $('.detail-tab .detailtab li').eq($(this).index()).trigger('click');
+        })
 
         // goto purchase where top fixed when scrollTop gt some value
         $(window).scroll(() => {
@@ -14,7 +27,6 @@
                 }, 100)
             }
         })
-
         $('.productOptions').find('li').click(function() {
             $(this).addClass("cur").siblings().removeClass("cur");
         })
@@ -30,19 +42,43 @@
             }
             $('.totle').text(num)
         });
-
         $('.add').click(function(e) {
             e.preventDefault();
             var num = $('.totle').text();
             num++;
             $('.totle').text(num)
         });
+
+        // 商品数量双击可编辑
         $('.totle').dblclick(function(e) {
             e.stopPropagation();
-            $(this).attr('contenteditable', true);
-        });
-        $('.totle').click(function() {
-            $(this).attr('contenteditable', false);
+            $('.totle').attr('contenteditable', true);
+            setTimeout(function() {
+                $('.totle').attr('contenteditable', false);
+            }, 20000);
+        })
+
+
+        // 从 cookie中获得数量
+
+
+        //有误！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！111111111111111111111111111
+        if (cookie.get('shop')) {
+            let id = location.search.split('=')[1]; // 从地址栏获得ID
+            let shop = JSON.parse(cookie.get('shop'));
+            shop = shop.filter(function(elm) {
+                return elm.id == id;
+            });
+
+            $('.totle').html(shop[0].num);
+        } else {
+            $('.totle').html(1);
+        }
+
+
+        $('#btn-buy-fixed').click(function(ev) {
+            ev.stopPropagation();
+            location.href = '../html/cart.html';
         })
 
 
@@ -71,7 +107,7 @@
                     mainscale.find('.PriceContent span').first().text(res.price);
                     mainscale.find('#spic img').attr('src', JSON.parse(imgurl)[0]);
                     mainscale.find('#bpic').attr('src', JSON.parse(imgurl)[0]);
-
+                    $('.fixedRight > img').attr('src', JSON.parse(imgurl)[0]);
                     // mainscale.find('#list li img').each(function(index,elm){
                     //     $(elm).attr('src',res.imgurl[index])
                     // });
@@ -118,7 +154,7 @@
 
                     if (shop.some(elm => elm.id == id)) {
                         shop.forEach((elm, i) => {
-                            elm.id == id ? elm.num = num : null;
+                            elm.id == id ? elm.num = num : null; //可以采用  +=  或者$('.totle').html()的值从cookie中获取
                         });
                     } else {
                         shop.push(product);

@@ -597,7 +597,6 @@ a.esim_a {
   border-bottom: 1px solid #ddd;
   background-color: #ffffff;
   text-align: right;
-  line-height: 40px;
 }
 .fixed-btn-div {
   margin: 0 auto;
@@ -612,10 +611,10 @@ a.esim_a {
   justify-content: space-between;
   align-items: center;
 }
-.fixedLeft .fixedLeft span.fixedCur {
+.fixedLeft span.fixedCur {
   color: #ff5e5e !important;
 }
-.fixedLeft .fixedLeft span:first-child {
+.fixedLeft span:first-child {
   border-right: 1px solid #d0d0d0;
 }
 .fixedLeft span {
@@ -644,6 +643,9 @@ a.esim_a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+.fixedRight .fixedInfo p {
+  margin-bottom: 0 !important;
 }
 .fixedRight .fixedInfo .fixedInfoName {
   color: #3c3c3c;
